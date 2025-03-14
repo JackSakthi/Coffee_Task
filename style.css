@@ -404,6 +404,16 @@ footer{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        gap: 40px;
+
+    }
+    .body1 .left{
+        align-items: center;
+        text-align: center;
+    }
+    .body1 .left .btns{
+        /* background-color: red; */
+        justify-content: center;
     }
 
 
@@ -432,5 +442,24 @@ footer{
     }
     header .navbar .bar{
         display: block;
+    }
+}
+@media(max-width: 490px){
+    .body1 .right img{
+        display: none;
+
+    }    
+    .body5 .pics .pic1 .img1{
+        width: 400px;
+        /* background-color: red; */
+    }
+    .body5 .pics .pic1 .img1 img{
+        width: 100%;
+    }
+    .body1 .left{
+        /* background-color: red; */
+        align-self: center;
+        padding-left: 130px;
+        /* padding-right: -20px; */
     }
 }
