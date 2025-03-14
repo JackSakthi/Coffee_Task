@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+:root{
+    /* colors */
+    --white-color: #fff;
+
+    --dark-color: #252525;
+    
+    --primary-color: #3b141c;
+    
+    --secondary-color: #f3961c;
+    
+    --light-pink-color: #faf4f5;
+    
+    --medium-gray-color: #ccc;
+    
+    /* Font size */
+    
+    --font-size-s: 0.9rem;
+    
+    --font-size-n: 1rem;
+    
+    --font-size-m: 1.12rem;
+    
+    --font-size-1: 1.5rem;
+    
+    --font-size-xl: 2rem;
+    
+    --font-size-xxl: 2.3rem;
+    
+    /* Font weight */
+    
+    --font-weight-normal: 400;
+    
+    --font-weight-medium: 500;
+    
+    --font-weight-semibold: 600;
+    
+    --font-weight-bold: 700;
+
+    /* border radius */
+    --border-radius-s:8px;
+    --border-radius-m:30px;
+    --border-radius-circle:50%;
+
+    /* site max-width */
+    --site-max-width:1300px;
+
+}
+header{
+    background: var(--primary-color);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    padding: 18px 10px;
+}
+header .navbar .bar{
+    color: white;
+    font-size: 23px;
+    display: none;
+}
+header .navbar .nav a:hover{
+    background-color: #f3961c;
+    color: white;
+    transition:0.8s ease;
+}
+header .navbar a{
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 20px;   
+}
+.body1 .left {
+    /* background-color: red; */
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.body1 .left h2{
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-family: "miniver", sans-serif ;
+}
+.body1 .left h3{
+    color: white;
+    font-weight: 600;
+    font-size: 28px;
+}
+.body1 .left p{
+    color: #ccc;
+}
+.body1 .btns{
+    display: flex;
+    gap: 10px;
+}
+.body1 .btns .one .btn{
+    background-color: var( --secondary-color) ;
+    border-radius: 30px;
+    padding: 8px 20px;
+}
+.body1 .btns .one .btn:hover{
+    border: 2px solid white;
+    color: white;
+}
+.body1 .btns .two .btn{
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 8px 20px;
+}
+.body1 .btns .two .btn:hover{
+    background-color: #f3961c;
+}
+.body1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px 60px 0px;
+    background-color: var(--primary-color);
+    flex-wrap: wrap-reverse;
+
+}
+.body1 .right img{
+    width: 450px;
+}
+.body2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 0px;
+    flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
+}
+.body2 .left .img{
+    height: 400px;
+    width: 400px;
+    background-image: url("images/about-image.jpg");
+    background-size: cover;
+    background-position-x: -70px;
+    /* background-color: red; */
+    border-radius: 50%;
+
+}
+.body2 .right{
+    font-size: 22px;
+}
+.body2 .right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* background-color: red; */
+    width: 620px;
+    text-align: center;
+    align-items: center;
+}
+.body2 .right .soc{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.body2 .right .head h2{
+    font-weight: 800;
+    /* border-bottom: 4px solid #f3961c; */
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+
+}
+.body2 .right .head h2::before{
+    content: " ";
+    width: 100px;
+    height: 4px;
+    bottom: 0;
+    border-radius: 20px;
+    background-color:var(--secondary-color);   
+    position: absolute;
+    z-index: 0;
+}
+
+.body3 .head h2{
+    font-weight: 800;
+    /* border-bottom: 4px solid #f3961c; */
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+
+}
+
+.body3 .head h2::before{
+    content: " ";
+    width: 90px;
+    height: 4px;
+    bottom: 0;
+    border-radius: 20px;
+    background-color:var(--secondary-color);   
+    position: absolute;
+    z-index: 0;
+}
+
+.body3 .cards{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 40px 0px;
+    
+}
+.body3{
+    padding-top: 80px;
+}
+.body3 .cards .card1 img{
+    height: 250px;
+    width: 250px;
+}
+.body3 .cards .card1 h3{
+    font-weight: 900;
+}
+.body3 .cards .card1{
+    /* background-color: red; */
+    /* border: 1px solid; */
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+    text-align: center;
+    
+}
+.body5{
+    padding-top: 80px;
+}
+.body5 .head h2{
+    font-weight: 800;
+    /* border-bottom: 4px solid #f3961c; */
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+
+}
+
+.body5 .head h2::before{
+    content: " ";
+    width: 90px;
+    height: 4px;
+    bottom: 0;
+    border-radius: 20px;
+    background-color:var(--secondary-color);   
+    position: absolute;
+    z-index: 0;
+}
+
+.body5 .pics .pic1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px 0px;
+    /* background-color: red; */
+    flex-wrap: wrap;
+}
+.body5 .pics .pic1 .img1 img{
+    height: 250px;
+    width: 400px;
+    border-radius: 8px;
+    transition: 0.8s ease;
+}
+.body5 .pics .pic1 .img1 img:hover{
+   transform: scale(1.02);
+    cursor: zoom-in;
+}
+.body6 .head h2{
+    font-weight: 800;
+    /* border-bottom: 4px solid #f3961c; */
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+
+}
+
+
+.body6 .head h2::before{
+    content: " ";
+    width: 90px;
+    height: 4px;
+    bottom: 0;
+    border-radius: 20px;
+    background-color:var(--secondary-color);   
+    position: absolute;
+    z-index: 0;
+}
+.body6 .part{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0px;
+    /* background-color: red; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.body6{
+    padding-top: 20px;
+}
+.body6 .part .left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* background-color: red; */
+    width: 400px;
+}
+.body6 .part .left .one{
+    display: flex;
+    gap: 15px;
+}
+.body6 .part .right{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    gap: 10px;
+    /* background-color: rebeccapurple; */
+
+}
+.body6 .part .right input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid gray;
+    padding: 10px;
+}
+.body6 .part .right textarea{
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+.body6 .part .right{
+    width: 45%;
+
+}
+.body6 .part .right .btn{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    padding: 7px 30px;
+}
+footer{
+    background-color: var(--dark-color);
+    color: white;
+    align-items: center;
+    padding: 20px 0px;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 30px;
+
+    
+}
+
+@media(max-width: 1200px){
+    .body3 .cards{
+        justify-content: space-around;
+   
+    }
+    .body5 .pics .pic1{
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 40px;
+    }
+
+
+}
+@media(max-width: 992px){
+    .body6 .part{
+        justify-content: center;
+    }
+    .body1 .right img{
+        width: 400px;
+    }
+    .body1 {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+}
+@media(max-width: 768px){
+    .body6 .part .right{
+        align-items: center;
+        /* justify-content: center; */
+        width: 80%;
+    }
+    footer .one{
+        width: 300px;
+        /* background-color: red; */
+    }
+    footer .two{
+        width: 200px;
+    }
+    footer .three{
+        width: 300px;
+        /* background-color: red; */
+    }
+    header .navbar .nav{
+        display: none;
+    }
+    header .navbar .bar{
+        display: block;
+    }
+}
